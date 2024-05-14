@@ -7,7 +7,7 @@ import { Image, Loader2, MousePointerSquareDashed } from "lucide-react";
 import { useState, useTransition } from "react";
 import Dropzone, { FileRejection } from 'react-dropzone'
 import { toast } from '@/components/ui/use-toast';
-const page = () => {
+const Upload = () => {
     const [isDragOver, setIsDragOver] = useState<boolean>(false);
     const router = useRouter();
     const { startUpload, isUploading } = useUploadThing('imageUploader', {
@@ -109,4 +109,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Upload;
